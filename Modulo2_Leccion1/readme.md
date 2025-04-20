@@ -5,7 +5,7 @@ Autor: Emmanuel A. Arguelles Ocasio
 Fecha: 20 de abril de 2025
 
 ## 🏠 Pantalla de Inicio
-![Interfaz de usuario gráfica, Aplicación](./imagenes_Prueba/inicio.png)
+![Interfaz de usuario gráfica, Aplicación](./Imagenes_Prueba/inicio.png)
 
 Descripción:\
 La pantalla principal muestra una cuadrícula con los productos
@@ -21,7 +21,7 @@ Ruta:\
 http://127.0.0.1:5000/
 
 ## 📊 Pantalla de Tabla de Productos
-![Interfaz de usuario gráfica](./imagenes_prueba/tabla.png)
+![Interfaz de usuario gráfica](./Imagenes_Prueba/tabla.png)
 
 Descripción:\
 Esta pantalla muestra los productos en formato de tabla, con columnas
@@ -35,7 +35,7 @@ Ruta:\
 http://127.0.0.1:5000/tabla
 
 ## 📋 Pantalla de Lista de Productos
-![Interfaz de usuario gráfica, Aplicación](./imagenes_prueba/lista.png)
+![Interfaz de usuario gráfica, Aplicación](./Imagenes_Prueba/lista.png)
 
 Descripción:\
 Esta pantalla muestra los productos en formato de lista, con solo el
@@ -61,10 +61,10 @@ Rutas probadas:\
 - PUT /productos\
 - DELETE /productos
 
-![Captura de pantalla de computadora](./imagenes_prueba/get.png)
-![Texto](./imagenes_prueba/post.png)
-![Texto](./imagenes_prueba/put.png)
-![Texto](./imagenes_prueba/delete.png)
+![Captura de pantalla de computadora](./Imagenes_Prueba/get.png)
+![Texto](./Imagenes_Prueba/post.png)
+![Texto](./Imagenes_Prueba/put.png)
+![Texto](./Imagenes_Prueba/delete.png)
 
 ## 💡 Reflexión
 
