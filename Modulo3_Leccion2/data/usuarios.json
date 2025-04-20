@@ -1,0 +1,17 @@
+[
+    {
+        "username": "juan",
+        "password": "scrypt:32768:8:1$FjJx7u4kEZC1bgK5$7993feee49273d0eb5fbd68ce17808bd0b99a6ab421b64bbd8943977b9146633ec49e31179c110e1a8b5608790731fcb6a7d1831da766ddab2ffbd958c170109",
+        "role": "user"
+    },
+    {
+        "username": "marioF2",
+        "password": "scrypt:32768:8:1$ofFwsYwSsyYsDUcP$2b6e6960d59749a3223346085078b5b291eb42b4dc3492d0db3d583643afbd2f67fd38ccfb9ca6eca67b1d6fb34d66bacf1749f8b88369d01a37460bdd5c329a",
+        "role": "user"
+    },
+    {
+        "username": "Cookie3",
+        "password": "scrypt:32768:8:1$CJJZepnylKd2BF7I$d1443dcfbeebd81a316d967fde17b80299643d0f498b41ec6d13ed6c9da6fce65064ce556ada9f18a4f35f1cd067cc3e8b77a5f309448fa1d9128bff3597d609",
+        "role": "user"
+    }
+]

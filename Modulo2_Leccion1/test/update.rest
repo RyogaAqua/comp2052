@@ -1,0 +1,13 @@
+PUT http://127.0.0.1:5000/productos
+Content-Type: application/json
+
+{
+    "old": {
+        "nombre": "Audifonos 203 ",
+        "precio": 239.99
+    },
+    "new": {
+        "nombre": "Audífonos inalámbricos",
+        "precio": 199.99
+    }
+}

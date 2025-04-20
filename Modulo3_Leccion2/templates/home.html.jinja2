@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1 class="title">Bienvenido</h1>
+
+  <div class="alert alert-info">
+    <strong>{{ message }}</strong>
+  </div>
+
+  <p class="role-info">
+    Has iniciado sesión como <strong>{{ current_user.role | capitalize }}</strong>. Puedes acceder a las siguientes opciones:
+  </p>
+
+  <div class="button-group">
+    <a href="{{ url_for('articulos') }}" class="btn btn-primary">Ver Artículos</a>
+    <a href="{{ url_for('admin_articulos') }}" class="btn btn-warning">Ver Artículos Exclusivos</a>
+  </div>
+
+  <div class="logout-section">
+    <a href="{{ url_for('logout') }}" class="btn btn-secondary">Cerrar sesión</a>
+  </div>
+</div>
+{% endblock %}

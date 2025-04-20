@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1 class="title">Bienvenido</h1>
+
+  <div class="alert alert-info">
+    <strong>{{ message }}</strong>
+  </div>
+
+  {% if role == 'admin' %}
+    <p>Has iniciado sesión como <strong>Administrador</strong>. Puedes acceder al panel de administración.</p>
+    <a href="/admin" class="btn btn-warning">Ir al Panel de Admin</a>
+  {% elif role == 'user' %}
+    <p>Has iniciado sesión como <strong>Usuario</strong>. Disfruta de tus funcionalidades básicas.</p>
+  {% else %}
+    <p>Lograste entrar a la pagina que es home.html.</p>
+  {% endif %}
+
+  <br><br>
+  <a href="/" class="btn btn-secondary">Cerrar sesión</a>
+</div>
+{% endblock %}

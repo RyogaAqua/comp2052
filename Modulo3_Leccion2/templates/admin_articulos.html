@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Artículos para Admin{% endblock %}
+
+{% block content %}
+  <h1>Artículos Exclusivos para Admin</h1>
+
+  <!-- Artículos visibles para todos -->
+  <h2>Artículos para todos</h2>
+  {% for article in articles %}
+    {% if "admin" in article.visible_para and "user" in article.visible_para %}
+      <div class="article">
+        <h3>{{ article.titulo }}</h3>
+        <p>{{ article.contenido }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <!-- Artículos exclusivos para administradores -->
+  <h2>Artículos exclusivos para administradores</h2>
+  {% for article in articles %}
+    {% if "admin" in article.visible_para and "user" not in article.visible_para %}
+      <div class="article">
+        <h3>{{ article.titulo }}</h3>
+        <p>{{ article.contenido }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

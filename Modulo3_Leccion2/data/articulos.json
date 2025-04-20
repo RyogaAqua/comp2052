@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "contenido": "Naranja que tanto admin como user pueden ver.",
+      "visible_para": ["user", "admin"]
+    },
+    {
+      "id": 2,
+      "contenido": "Manzana que solo admin puede ver.",
+      "visible_para": ["admin"]
+    },
+    {
+      "id": 3,
+      "contenido": "Pera exclusiva para usuarios.",
+      "visible_para": ["user"]
+    }
+]

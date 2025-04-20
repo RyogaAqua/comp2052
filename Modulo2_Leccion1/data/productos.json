@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Camisa de algodón",
+        "precio": 25.99
+    },
+    {
+        "nombre": "Pantalón de mezclilla",
+        "precio": 40.0
+    },
+    {
+        "nombre": "Audífonos inalámbricos",
+        "precio": 199.99
+    },
+    {
+        "nombre": "Gorra deportiva",
+        "precio": 15.99
+    }
+]

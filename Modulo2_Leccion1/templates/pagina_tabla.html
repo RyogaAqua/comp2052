@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Tabla de Productos{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="title">Tabla de Productos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Precio ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for producto in productos %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ "%.2f"|format(producto.precio) }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

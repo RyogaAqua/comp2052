@@ -1,0 +1,146 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .process-form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .process-form input[type="text"],
+  input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #e9e9e9;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: #d6d6d6;
+  }
+  
+  .inline-form {
+    display: inline;
+    margin: 0;
+  }
+  
+  p {
+    display: block;
+    text-align: center;
+  }
+
+  /* Estilo para la información del rol */
+  .role-info {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  /* Grupo de botones */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Botón de advertencia (para admin) */
+  .btn-warning {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+
+  /* Sección de logout */
+  .logout-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Estilo para los contenedores de artículos */
+  .article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  /* Título del artículo */
+  .article h3 {
+    font-size: 1.2rem; /* Tamaño más pequeño que h2 */
+    color: #333; /* Color ligeramente más claro */
+    margin-bottom: 10px;
+    font-weight: normal; /* Menos prominente */
+  }
+
+  /* Contenido del artículo */
+  .article p {
+    font-size: 1rem; /* Tamaño de fuente uniforme para el contenido */
+    color: #555; /* Color más claro para el texto */
+    line-height: 1.5; /* Mejora la legibilidad */
+  }
+
+  /* Estilo para los encabezados de secciones (h2) */
+  h2 {
+    font-size: 1.5rem; /* Tamaño más grande que h3 */
+    color: #222; /* Color más oscuro */
+    margin-bottom: 15px;
+    text-align: left; /* Alineación a la izquierda */
+    font-weight: bold; /* Más prominente */
+  }
