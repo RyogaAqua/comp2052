@@ -1,0 +1,36 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Ana L\u00c3\u00b3pez",
+            "correo": "ana.lopez@email.com"
+        },
+        {
+            "id": 2,
+            "nombre": "Carlos P\u00c3\u00a9rez",
+            "correo": "carlos.perez@email.com"
+        },
+        {
+            "id": 3,
+            "nombre": "Ana",
+            "correo": "ana@email.com"
+        }
+    ],
+    "productos": [
+        {
+            "id": 101,
+            "nombre": "Teclado Mec\u00c3\u00a1nico",
+            "precio": 49.99
+        },
+        {
+            "id": 102,
+            "nombre": "Mouse Inal\u00c3\u00a1mbrico",
+            "precio": 25.5
+        },
+        {
+            "id": 103,
+            "nombre": "Monitor 24 pulgadas",
+            "precio": 199.99
+        }
+    ]
+}
