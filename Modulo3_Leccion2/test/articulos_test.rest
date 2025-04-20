@@ -1,0 +1,7 @@
+### Prueba de acceso a artículos como usuario
+GET http://127.0.0.1:5000/articulos
+Authorization: Bearer <user_token>
+
+### Prueba de acceso a artículos como administrador
+GET http://127.0.0.1:5000/admin/articulos
+Authorization: Bearer <admin_token>

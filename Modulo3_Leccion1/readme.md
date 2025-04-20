@@ -1,45 +1,89 @@
-Login Form App
-Una aplicación web para Login, construida con Flask, WTForms, Jinja2 y Bootstrap 5. Incluye una REST API integrada y una interfaz web responsiva que permite entrar y validar el login de un usuario.
+# COMP 2052 -- Sistema de Autenticación y Autorización con Flask
 
-Los controles de entrada de datos y las reglas de validación del Username y el Password se definen en el código del servidor app.py utilizando la librería WTForms.
+Autor: Emmanuel A. Arguelles Ocasio  
+Fecha: 20 de abril de 2025  
 
-Register Form
+## 📋 Descripción del Proyecto
 
-🚀 Tecnologías utilizadas
-Flask – Is a lightweight WSGI web application framework.
-Jinja2 – Is a fast, expressive, extensible templating engine for web pages allow writing code similar to Python syntax.
-wtforms – Flexible forms validation and rendering library for Python web development.
-Bootstrap 5 – Framework CSS para diseño moderno y responsivo
-HTML5, CSS3, JavaScript (mínimo)
-📁 Estructura del Proyecto
-simple-form/
-│
-├── static/
-│   └── css/
-│       └── styles.css         # Estilos personalizados
-│
-├── templates/
-│   ├── base.html              # Layout principal
-│   ├── home.html              # Página que se presenta luego de validar la entrada del usuario.
-│   └── index.html             # Página principal con formulario para login.
-│
-├── app.py                     # App principal con vistas y lógica de frontend
-└── requirements.txt           # Dependencias del proyecto
-🔧 Instalación del App
-Clona el repositorio:
-git clone https://github.com/tu-usuario/comp2052.git
-cd simple-form
-Instala las dependencias:
-pip install -r requirements.txt
-Ejecuta la aplicación:
-python app.py
-Abre tu navegador y ve a http://localhost:5000
+Este proyecto es una aplicación Flask que implementa un sistema de autenticación y autorización basado en roles (`user` y `admin`). El objetivo principal es proteger rutas específicas según los permisos asignados a cada rol, utilizando Flask-Principal y Flask-Login. Además, se incluyen funcionalidades para el manejo de contraseñas hasheadas y una interfaz de usuario básica.
 
-📡 Endpoints de la API
-GET /login
-Presenta la página web que contiene el formulario para login. Los elementos de interacción (cajas de texto y botones) son definidos en el código de Back-end (app.py).
+## 🚀 Funcionalidades Principales
 
-Login Form
+1. **Autenticación y Autorización**:
+   - Inicio de sesión con validación de credenciales.
+   - Roles definidos: `user` y `admin`.
+   - Protección de rutas según permisos.
 
-POST /login
-Procesa os datos entrados a través del formulario de login.
+2. **Hashing de Contraseñas**:
+   - Contraseñas almacenadas de forma segura utilizando `werkzeug.security.generate_password_hash`.
+
+3. **Rutas Implementadas**:
+   - `/`: Redirige al formulario de inicio de sesión.
+   - `/login`: Maneja el inicio de sesión.
+   - `/home`: Página de bienvenida tras iniciar sesión.
+   - `/admin`: Ruta exclusiva para administradores.
+   - `/user`: Ruta exclusiva para usuarios estándar.
+   - `/logout`: Cierra la sesión del usuario.
+
+4. **Interfaz de Usuario**:
+   - Diseño responsivo utilizando CSS.
+   - Mensajes de error y éxito mostrados dinámicamente en la interfaz.
+
+## 📂 Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+- **`app.py`**: Archivo principal que define las rutas y la lógica de autenticación.
+- **`templates/`**: Contiene las plantillas HTML para las vistas.
+- **`static/css/`**: Contiene los estilos CSS.
+- **`data/`**: Archivos JSON que almacenan los usuarios y administradores.
+- **`hashear_usuarios.py` y `hashear_admin.py`**: Scripts para hashear las contraseñas de usuarios y administradores.
+
+### Diagrama de Flujo
+![Diagrama de Flujo](./Imagenes_Prueba/Flow_M3_L1.png)
+
+## 🧪 Pruebas Realizadas
+
+Se realizaron pruebas manuales para verificar el correcto funcionamiento de las rutas y permisos. A continuación, se describen algunos casos de prueba:
+
+### Pruebas de Inicio de Sesión
+- **Inicio de sesión exitoso**:
+  ![Inicio de Sesión Exitoso de Admin](./Imagenes_Prueba/admin_home.png)
+  ![Inicio de Sesión Exitoso de Usuario](./Imagenes_Prueba/usuario_home.png)
+
+- **Inicio de sesión fallido**:
+  ![Inicio de Sesión Fallido](./Imagenes_Prueba/invalido.png)
+
+### Pruebas de Acceso a Rutas
+- **Acceso permitido**:
+  - Usuarios pueden acceder a `/user`.
+  - Administradores pueden acceder a `/admin`.
+
+- **Acceso denegado**:
+  ![Acceso Denegado](./Imagenes_Prueba/error_403.png)
+
+## 🌐 Rutas del Proyecto
+
+1. **Página Principal** (`/`):
+   - Redirige al formulario de inicio de sesión.
+
+2. **Inicio de Sesión** (`/login`):
+   - Procesa las credenciales ingresadas por el usuario.
+   - Redirige a `/home` si las credenciales son válidas.
+
+3. **Página de Bienvenida** (`/home`):
+   - Muestra un mensaje de bienvenida con el rol del usuario autenticado.
+
+4. **Ruta Exclusiva para Administradores** (`/admin`):
+   - Accesible solo para usuarios con rol `admin`.
+
+5. **Ruta Exclusiva para Usuarios** (`/user`):
+   - Accesible solo para usuarios con rol `user`.
+
+6. **Cerrar Sesión** (`/logout`):
+   - Cierra la sesión del usuario y redirige al formulario de inicio de sesión.
+
+## 🔗 Enlace al Repositorio
+
+GitHub:  
+[https://github.com/RyogaAqua/comp2052](https://github.com/RyogaAqua/comp2052)

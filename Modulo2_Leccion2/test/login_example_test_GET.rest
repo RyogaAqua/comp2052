@@ -1,0 +1,5 @@
+### Prueba de inicio de sesión con credenciales válidas
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=johndoe@outlook.com&password=secreto

@@ -1,0 +1,48 @@
+### Prueba de redirección a /login desde la raíz
+GET http://localhost:5000/
+
+###
+
+### Prueba de inicio de sesión exitoso como administrador
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin1&password=admin_password
+
+###
+
+### Prueba de inicio de sesión fallido
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin1&password=wrong_password
+
+###
+
+### Prueba de acceso a /home después de iniciar sesión
+GET http://localhost:5000/home
+Cookie: session=<SESSION_COOKIE>
+
+###
+
+### Prueba de acceso a /admin como administrador
+GET http://localhost:5000/admin
+Cookie: session=<SESSION_COOKIE>
+
+###
+
+### Prueba de acceso denegado a /admin como usuario estándar
+GET http://localhost:5000/admin
+Cookie: session=<USER_SESSION_COOKIE>
+
+###
+
+### Prueba de acceso a /user como usuario estándar
+GET http://localhost:5000/user
+Cookie: session=<USER_SESSION_COOKIE>
+
+###
+
+### Prueba de cierre de sesión
+GET http://localhost:5000/logout
+Cookie: session=<SESSION_COOKIE>

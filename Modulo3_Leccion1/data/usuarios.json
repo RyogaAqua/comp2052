@@ -1,18 +1,17 @@
 [
     {
-      "username": "juan",
-      "password": "pepitoDelpueblo",
-      "role": "user"
+        "username": "juan",
+        "password": "scrypt:32768:8:1$xnkYeOrU0BpS5Asn$1fed58f72471ec8488c63ed23b3c66057323b11c49294ee80327f4727bc8da61693086e40aaa6a91511553ad1fc5921a2ae791aecec767408e15475407ca4684",
+        "role": "user"
     },
     {
-      "username": "marioF2",
-      "password": "mario123",
-      "role": "user"
+        "username": "marioF2",
+        "password": "scrypt:32768:8:1$ej4ed6ccMxFy4J1p$d8bc1bc9193ef8c1659e96287b6229e628fa86c2fcf1bd417352c58efd31b6c1e59abc0a3512bb5c53b4f6d0de6ca36f5addce1e980204a4813b049e7c21b926",
+        "role": "user"
     },
     {
-      "username": "Cookie3",
-      "password": "Pass123",
-      "role": "user"
+        "username": "Cookie3",
+        "password": "scrypt:32768:8:1$lpJLTdR7QZeCyotI$d765498a5566b124b33c9f9ab22c51d3b27c4c10adbe2348cecc1f7f7975b206aed50dd9a316417c3a07b2d35796447d6ffcbe510332d9b9dcbfadc5f7f512f4",
+        "role": "user"
     }
-  ]
-  
+]

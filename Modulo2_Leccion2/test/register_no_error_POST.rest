@@ -1,0 +1,5 @@
+### Prueba de registro exitoso con datos válidos
+POST http://localhost:5000/register
+Content-Type: application/x-www-form-urlencoded
+
+username=johndoe&email=johndoe@outlook.com&password=secreto123

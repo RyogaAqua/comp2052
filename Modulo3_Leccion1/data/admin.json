@@ -1,13 +1,12 @@
 [
     {
-      "username": "admin1",
-      "password": "admin123",
-      "role": "administrator"
+        "username": "admin1",
+        "password": "scrypt:32768:8:1$KiyFImsf0UGhA2bN$48528a7f8cf43cf294b8b99f16981a191ac6b6501312570ea8cabf39af281f6540e93d4f5bac20cfbcd41ade03c3bb2bae98515daa26bb11381725c7a0be292d",
+        "role": "administrator"
     },
     {
-      "username": "admin2",
-      "password": "adminsecure",
-      "role": "administrator"
+        "username": "admin2",
+        "password": "scrypt:32768:8:1$qen5ktDctAztC8OV$d38af6ca6110cb7b9f0db759a159c3d8c98bf79449b97ba1b2dc6fa476cce2b8292cba5bae2a14310824d01d30b1b56986241361c4111305cdd8c6f1e61d98d2",
+        "role": "administrator"
     }
-  ]
-  
+]

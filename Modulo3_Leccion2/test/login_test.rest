@@ -1,10 +1,20 @@
 ### Prueba de inicio de sesión exitoso
 POST http://127.0.0.1:5000/login
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
-username=admin1&password=secreto
+{
+  "username": "juan",
+  "password": "password123"
+}
 
-###
+### Prueba de inicio de sesión fallido (credenciales incorrectas)
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "username": "juan",
+  "password": "wrongpassword"
+}
 
 ### Prueba de acceso a artículos (usuario autenticado)
 GET http://127.0.0.1:5000/articulos
